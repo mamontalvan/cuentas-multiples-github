@@ -19,7 +19,7 @@ https://github.com/may-personal
  $ cd ~/.ssh
 ```
 
-* Digitar el siguiente comando por cada una de las cuentas:
+* Sintaxis del comando para generar la clave SSH:
 
 ```
 ssh-keygen -t rsa -C "your-email-address" -f "github-username"
@@ -32,7 +32,7 @@ donde:
 -f representa el nombre del archivo donde se guardará su clave ssh
 ```
 
-Generando clave SSH para cada una de mis cuentas:
+* Digitar el comando por cada una de las cuentas:
 
 ```
 ssh-keygen -t rsa -C "email_oficina@oficina.com" -f "github-may-oficina"
@@ -42,7 +42,8 @@ ssh-keygen -t rsa -C "email_personal@gmail.com" -f "github-may-personal"
 
 Nota: Durante la generación de la clave le solicitarán que ingrese una frase para la contraseña, puede dejarla vacía y continuar.
 
-Finalmente aparecerá el mensaje de confirmación de generación de la clave SSH:
+
+Mensaje de confirmación de generación de la clave SSH:
 
 ````
 Your identification has been saved in github-may-personal
@@ -63,7 +64,7 @@ The key's randomart image is:
 +----[SHA256]-----+
 ````
 
-Asegúrese de haber generado la clave SSH para las dos cuentas de Github. Digitando el siguiente comando:
+* Digite el siguiente comando para validar que los archivos de clave SSH se hayan creado:
 
 ```
 ls -l
@@ -78,7 +79,7 @@ ls -l
 
 ## Paso 2. Agregar claves SSH al Agente SSH
 
-Digite el siguiente comando:
+* Digite el siguiente comando:
 
 ```
  ssh-add -K ~/.ssh/github-may-oficina
@@ -104,7 +105,7 @@ Debemos agregar nuestra clave pública (que generamos en el paso 1) y agregarla 
   vim ~/.ssh/github-may-personal.pub
 ```
 
-* Pegar el contenido copiado de la clave pública en Github:
+* Pegar el contenido copiado de la clave pública en Github, siguiendo los siguientes pasos:
 
 ```
 1. Inicia sesión en cada una de las cuentas de Github (asegúrate de hacerlo en dos navegadores web diferentes)
@@ -113,7 +114,7 @@ Debemos agregar nuestra clave pública (que generamos en el paso 1) y agregarla 
 
 ```
 
-Nota 1: Asegúrate de realizar este mismo procedimiento en tus dos cuentas de Github.
+Nota 1: Asegúrate de realizar este mismo procedimiento en las dos cuentas de Github.
 
 Nota 2: Asegúrate de haber copiado el contenido de tu CLAVE PÚBLICA únicamente.
 

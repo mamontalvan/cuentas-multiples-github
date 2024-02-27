@@ -4,11 +4,11 @@ Para este caso tendremos 2 cuentas de github: una de mi trabajo y una personal.
 
 Cuentas de Github:
 
-``
+```
 https://github.com/may-oficina
 
 https://github.com/may-personal
-``
+```
 
 
 ## Paso 1. Crear las claves SSH para cada una de las cuentas

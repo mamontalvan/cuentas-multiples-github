@@ -1,13 +1,15 @@
-# Cómo trabajar con varias cuentas de Github desde mi Mac
+# Cómo trabajar con múltiples cuentas de Github desde mi Mac
 
-Para este caso tendremos 2 cuentas de github: una de mi trabajo y una personal. El mismo procedimiento se puede aplicar para 3 o más cuentas de Github.
+Para este caso tendremos 2 cuentas de github: una de mi trabajo y una personal. 
 
 Cuentas de Github:
 
 ``
 https://github.com/may-oficina
+
 https://github.com/may-personal
 ``
+
 
 ## Paso 1. Crear las claves SSH para cada una de las cuentas
 
@@ -73,6 +75,7 @@ ls -l
 ```
 
 
+
 ## Paso 2. Agregar claves SSH al Agente SSH
 
 Digite el siguiente comando:
@@ -87,6 +90,7 @@ Mensaje de confirmación - claves agregadas al agente SSH:
 ```
 Identity added: github-may-personal (email_personal@gmail.com)
 ```
+
 
 
 ## Paso 3. Agregar la clave pública SSH a Github
@@ -112,6 +116,7 @@ Debemos agregar nuestra clave pública (que generamos en el paso 1) y agregarla 
 Nota 1: Asegúrate de realizar este mismo procedimiento en tus dos cuentas de Github.
 
 Nota 2: Asegúrate de haber copiado el contenido de tu CLAVE PÚBLICA únicamente.
+
 
 ## Paso 4. Crear un archivo de configuración y registrar las entradas de host
 
@@ -142,6 +147,8 @@ Nota 2: Asegúrate de haber copiado el contenido de tu CLAVE PÚBLICA únicament
           User git
           IdentityFile ~/.ssh/github-may-personal
 ```
+
+
 
 ## Paso 5. Clonar repositorios de GitHub
 
@@ -195,7 +202,7 @@ git remote add origin git@github-may-oficina:SATORIOS/TestRepo.git
 
 
 ````
-Nota: Si le ha resultado útil, considere dejar su estrellita!!!
+Nota: Si le ha resultado útil considere dejar su estrellita!!!
 ````
 
 

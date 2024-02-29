@@ -176,7 +176,7 @@ Cuenta/Organización de Github de nuestro trabajo: "SATORIOS"
 Digitamos el siguiente comando:
 
 ```
-Sintaxis: git clone git@{host-del-archivo-config}:{propietario-cuenta}/{the-repo-name}.git
+Sintaxis: git clone git@{nombre-host}:{propietario-cuenta}/{nombre-repositorio}.git
 
 Ejemplo: git clone git@github-may-oficina:SATORIOS/TestRepo.git
 ```

@@ -170,14 +170,15 @@ cd REPOSITORIOS_TRABAJO
 * Clonamos un repositorio perteneciente a la organización/cuenta de Github de nuestro trabajo. Ejemplo:
 
 Nombre repositorio: "TestRepo"
+
 Cuenta/Organización de Github de nuestro trabajo: "SATORIOS"
 
 Digitamos el siguiente comando:
 
 ```
- git clone git@{host-del-archivo-config}:{propietario-cuenta}/{the-repo-name}.git
+Sintaxis: git clone git@{host-del-archivo-config}:{propietario-cuenta}/{the-repo-name}.git
 
- [e.g.] git clone git@github-may-oficina:SATORIOS/TestRepo.git
+Ejemplo: git clone git@github-may-oficina:SATORIOS/TestRepo.git
 ```
 
 * De ahora en adelante, para garantizar que nuestras confirmaciones y envíos desde cada repositorio del sistema utilicen el usuario de GitHub correcto, tendremos que configurar nombre de usuario y correo en cada repositorio recién clonado.
